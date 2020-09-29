@@ -1,0 +1,124 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-type;
+  background-color: white;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.ui-card {
+  position: relative;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.sign-in-container {
+  background-color: white;
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  margin: 10% auto;
+  padding: 50px 0;
+  text-align: left;
+  .logo {
+    height: 32px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .ui-title-one {
+    color: $text-colour;
+    font-family: $font-type;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    padding-top: 30px;
+    font-size: 1.1em;
+  }
+  .ui-title-sub {
+    font-family: $font-type;
+    color: #948f93;
+    font-size: 0.8em;
+    font-weight: 250;
+    margin-top: 10px !important;
+  }
+  .ui-email-placeholder {
+    color: $text-colour;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-top: 60px !important;
+    margin-bottom: 15px !important;
+  }
+  .ui-input-email {
+    color: $text-colour;
+    border: 1px dotted white;
+    border-width: thin;
+    border-radius: 0.5em;
+    padding: 18px;
+    outline: 0;
+    resize: none;
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: inline-block;
+  }
+  .ui-checkbox-container {
+    display: flex;
+    margin-bottom: 40px;
+    .ui-checkbox {
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 25px;
+    }
+    .ui-text {
+      margin-top: 3px;
+      text-indent: 10px;
+    }
+  }
+  .ui-sign-in-button {
+    padding: 15px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    color: $text-colour;
+    border: 1px dotted #ccc;
+    border-width: thin;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: $font-type;
+    width: 140px;
+    text-align: left;
+    text-indent: 30px;
+    font-size: 1em;
+  }
+}
+
+// Optimisations for phones and tablets
+@media (max-width: 1024px) {
+  * {
+    font-size: 1.05em;
+  }
+  .sign-in-container {
+    padding-top: 5%;
+    width: 70%;
+    .ui-title-one {
+      font-size: 1.3em;
+    }
+    .ui-title-sub {
+      font-size: 0.7em;
+    }
+    .ui-input-email {
+      font-size: 0.6em;
+      width: 80%;
+    }
+    .ui-checkbox-container {
+      .ui-text {
+        font-size: 0.6em;
+        text-indent: 15px;
+      }
+    }
+  }
+}
