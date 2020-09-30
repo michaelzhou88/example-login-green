@@ -127,26 +127,32 @@ body > #root > div {
 @media (max-width: 1024px) {
   .ui-card {
     height: 60%;
-    width: 80%;
+    width: 75%;
     position: absolute;
+    .logo {
+      height: 30px;
+      width: 80px;
+    }
     .ui-sign-in-button {
-      font-size: 1em;
+      font-size: 0.8em;
+      margin-top: 10px;
     }
   }
   .container {
     .ui-title-one {
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
     .ui-title-sub {
-      font-size: 0.8em;
+      font-size: 0.62em;
     }
   }
   .ui-sign-in-container {
-    font-size: 0.8em;
+    font-size: 0.72em;
   }
   .ui-checkbox-container {
+    font-size: 0.82em;
     .ui-text {
-      font-size: 0.8em;
+      text-indent: 8px;
     }
   }
 }
