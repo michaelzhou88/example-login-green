@@ -59,7 +59,7 @@ body > #root > div {
     font-family: $font-type;
     font-weight: bold;
     letter-spacing: -0.045em;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .ui-title-sub {
     font-family: $font-type;
@@ -85,7 +85,6 @@ body > #root > div {
       outline: 0;
       resize: none;
       width: 100%;
-
       margin: 0 auto 10px auto;
       display: inline-block;
     }
