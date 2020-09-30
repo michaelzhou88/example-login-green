@@ -69,8 +69,8 @@ body > #root > div {
     padding-top: 10px;
   }
   .ui-sign-in-container {
+    color: $text-colour;
     .ui-email-placeholder {
-      color: $text-colour;
       font-size: 0.9em;
       font-family: $font-type;
       font-weight: 300;
@@ -78,7 +78,6 @@ body > #root > div {
       margin-bottom: 15px !important;
     }
     .ui-input-email {
-      color: $text-colour;
       border: 1px dotted #ccc;
       border-width: thin;
       border-radius: 0.5em;
@@ -86,6 +85,7 @@ body > #root > div {
       outline: 0;
       resize: none;
       width: 100%;
+
       margin: 0 auto 10px auto;
       display: inline-block;
     }
@@ -126,8 +126,9 @@ body > #root > div {
 // Optimisations for phones and tablets
 @media (max-width: 1024px) {
   .ui-card {
+    margin-bottom: 200px !important;
     height: 500px;
-    width: 75%;
+    width: 95%;
     position: absolute;
     .logo {
       height: 30px;

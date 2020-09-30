@@ -84,8 +84,11 @@ body > #root > div {
   padding-top: 10px;
 }
 
-.ui-card .ui-sign-in-container .ui-email-placeholder {
+.ui-card .ui-sign-in-container {
   color: #4c494b;
+}
+
+.ui-card .ui-sign-in-container .ui-email-placeholder {
   font-size: 0.9em;
   font-family: gotham ssm a, gotham ssm b, sans-serif;
   font-weight: 300;
@@ -94,7 +97,6 @@ body > #root > div {
 }
 
 .ui-card .ui-sign-in-container .ui-input-email {
-  color: #4c494b;
   border: 1px dotted #ccc;
   border-width: thin;
   border-radius: 0.5em;
@@ -144,8 +146,9 @@ body > #root > div {
 
 @media (max-width: 1024px) {
   .ui-card {
+    margin-bottom: 200px !important;
     height: 500px;
-    width: 75%;
+    width: 95%;
     position: absolute;
   }
   .ui-card .logo {
