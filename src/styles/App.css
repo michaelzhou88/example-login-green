@@ -144,7 +144,7 @@ body > #root > div {
 
 @media (max-width: 1024px) {
   .ui-card {
-    height: 60%;
+    height: 500px;
     width: 75%;
     position: absolute;
   }
@@ -157,13 +157,13 @@ body > #root > div {
     margin-top: 10px;
   }
   .container .ui-title-one {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   .container .ui-title-sub {
-    font-size: 0.62em;
+    font-size: 0.75em;
   }
   .ui-sign-in-container {
-    font-size: 0.72em;
+    font-size: 0.75em;
   }
   .ui-checkbox-container {
     font-size: 0.82em;

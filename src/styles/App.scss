@@ -126,7 +126,7 @@ body > #root > div {
 // Optimisations for phones and tablets
 @media (max-width: 1024px) {
   .ui-card {
-    height: 60%;
+    height: 500px;
     width: 75%;
     position: absolute;
     .logo {
@@ -140,14 +140,14 @@ body > #root > div {
   }
   .container {
     .ui-title-one {
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
     .ui-title-sub {
-      font-size: 0.62em;
+      font-size: 0.75em;
     }
   }
   .ui-sign-in-container {
-    font-size: 0.72em;
+    font-size: 0.75em;
   }
   .ui-checkbox-container {
     font-size: 0.82em;
