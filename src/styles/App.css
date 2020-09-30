@@ -2,66 +2,98 @@
   margin: 0;
   padding: 0;
   font-family: gotham ssm a, gotham ssm b, sans-serif;
-  background-color: rgba(253, 250, 250, 0.521);
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100%;
-}
-
-.ui-card {
-  position: relative;
-}
-
-.sign-in-container {
-  background-color: white;
-  -webkit-box-shadow: 0 2px 5px #ccc;
-  box-shadow: 0 2px 5px #ccc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 25%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 10% auto;
-  padding: 50px 0;
-  text-align: left;
-}
-
-.sign-in-container .logo {
-  height: 32px;
-  margin-bottom: 10px;
   display: block;
 }
 
-.sign-in-container .ui-title-one {
-  color: #4c494b;
-  font-family: gotham ssm a, gotham ssm b, sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.045em;
-  padding-top: 30px;
-  font-size: 1.1em;
+body > #root > div {
+  height: 100vh;
 }
 
-.sign-in-container .ui-title-sub {
+.App {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 286px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  background-color: #ededed;
+}
+
+.ui-card {
+  z-index: 20;
+  position: relative;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+          box-shadow: 0 2px 5px #ccc;
+  margin: 100px !important;
+  padding: 50px !important;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  gap: 50px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  width: 500px;
+  max-width: 670px;
+  text-align: left;
+}
+
+.ui-card .logo {
+  height: 40px;
+  width: 130px;
+  margin-top: 30px !important;
+}
+
+.ui-card .container {
+  margin-bottom: 10px;
+}
+
+.ui-card .ui-title-one {
+  color: #4c494b;
+  font-family: gotham ssm a, gotham ssm b, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.045em;
+  font-size: 2.5em;
+}
+
+.ui-card .ui-title-sub {
   font-family: gotham ssm a, gotham ssm b, sans-serif;
   color: #948f93;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 250;
-  margin-top: 10px !important;
+  padding-top: 10px;
 }
 
-.sign-in-container .ui-email-placeholder {
+.ui-card .ui-sign-in-container .ui-email-placeholder {
   color: #4c494b;
   font-size: 0.9em;
+  font-family: gotham ssm a, gotham ssm b, sans-serif;
   font-weight: 300;
   margin-top: 60px !important;
   margin-bottom: 15px !important;
 }
 
-.sign-in-container .ui-input-email {
+.ui-card .ui-sign-in-container .ui-input-email {
   color: #4c494b;
   border: 1px dotted #ccc;
   border-width: thin;
@@ -69,31 +101,31 @@ body {
   padding: 18px;
   outline: 0;
   resize: none;
-  width: 80%;
-  margin: 0 auto 30px auto;
+  width: 100%;
+  margin: 0 auto 10px auto;
   display: inline-block;
 }
 
-.sign-in-container .ui-checkbox-container {
+.ui-card .ui-checkbox-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
 }
 
-.sign-in-container .ui-checkbox-container .ui-checkbox {
+.ui-card .ui-checkbox-container .ui-checkbox {
   top: 0;
   left: 0;
   height: 20px;
   width: 25px;
 }
 
-.sign-in-container .ui-checkbox-container .ui-text {
+.ui-card .ui-checkbox-container .ui-text {
   margin-top: 3px;
   text-indent: 10px;
 }
 
-.sign-in-container .ui-sign-in-button {
+.ui-card .ui-sign-in-button {
   padding: 15px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -111,26 +143,25 @@ body {
 }
 
 @media (max-width: 1024px) {
-  * {
-    font-size: 1.05em;
+  .ui-card {
+    height: 60%;
+    width: 80%;
+    position: absolute;
   }
-  .sign-in-container {
-    padding-top: 5%;
-    width: 70%;
+  .ui-card .ui-sign-in-button {
+    font-size: 1em;
   }
-  .sign-in-container .ui-title-one {
+  .container .ui-title-one {
     font-size: 1.3em;
   }
-  .sign-in-container .ui-title-sub {
-    font-size: 0.7em;
+  .container .ui-title-sub {
+    font-size: 0.8em;
   }
-  .sign-in-container .ui-input-email {
-    font-size: 0.6em;
-    width: 80%;
+  .ui-sign-in-container {
+    font-size: 0.8em;
   }
-  .sign-in-container .ui-checkbox-container .ui-text {
-    font-size: 0.6em;
-    text-indent: 15px;
+  .ui-checkbox-container .ui-text {
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=App.css.map */
