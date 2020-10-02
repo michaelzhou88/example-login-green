@@ -3,8 +3,6 @@ import React from "react";
 function Card() {
   return (
     <div className="ui-card">
-      {/* <div className="sign-in-container"> */}
-
       {/* Logo */}
       <img
         className="logo"
@@ -32,8 +30,6 @@ function Card() {
         <button className="ui-sign-in-button">Sign In</button>
       </div>
     </div>
-
-    // </div>
   );
 }
 

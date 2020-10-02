@@ -125,29 +125,23 @@ body > #root > div {
 // Optimisations for phones and tablets
 @media (max-width: 1024px) {
   .ui-card {
-    margin-bottom: 200px !important;
-    height: 500px;
-    width: 95%;
     position: absolute;
-    .logo {
-      height: 30px;
-      width: 80px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
     .ui-sign-in-button {
-      font-size: 0.8em;
       margin-top: 10px;
     }
   }
   .container {
-    .ui-title-one {
-      font-size: 1.5em;
-    }
     .ui-title-sub {
-      font-size: 0.75em;
+      font-size: 1em;
     }
   }
   .ui-sign-in-container {
-    font-size: 0.75em;
+    font-size: 1em;
   }
   .ui-checkbox-container {
     font-size: 0.82em;
