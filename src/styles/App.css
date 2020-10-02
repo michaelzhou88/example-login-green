@@ -65,7 +65,7 @@ body > #root > div {
 }
 
 .ui-card .container {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   height: 350px;
   padding-bottom: 10px;
 }
@@ -96,7 +96,7 @@ body > #root > div {
   font-family: gotham ssm a, gotham ssm b, sans-serif;
   font-weight: 300;
   margin-top: 40px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 0 !important;
   padding-top: 5px;
 }
 
