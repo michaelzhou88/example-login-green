@@ -108,7 +108,7 @@ body > #root > div {
   outline: 0;
   resize: none;
   width: 100%;
-  margin: 0 auto 10px auto;
+  margin: 10px auto 10px auto;
   display: inline-block;
 }
 

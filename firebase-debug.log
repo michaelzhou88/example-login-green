@@ -1,0 +1,33 @@
+[debug] [2020-10-02T16:20:25.442Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T16:20:25.444Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-10-02T16:20:25.444Z] CLI Version:   8.11.2
+[debug] [2020-10-02T16:20:25.444Z] Platform:      linux
+[debug] [2020-10-02T16:20:25.444Z] Node Version:  v10.19.0
+[debug] [2020-10-02T16:20:25.445Z] Time:          Fri Oct 02 2020 17:20:25 GMT+0100 (British Summer Time)
+[debug] [2020-10-02T16:20:25.445Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T16:20:25.445Z] 
+[debug] [2020-10-02T16:20:25.452Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-02T16:20:25.453Z] > authorizing via signed-in user
+[debug] [2020-10-02T16:20:25.453Z] [iam] checking project the-login-system for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-02T16:20:25.456Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/the-login-system:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-02T16:20:26.270Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 16:20:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=548","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-02T16:20:26.271Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/the-login-system  
+ 
+[debug] [2020-10-02T16:20:26.597Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 16:20:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'the-login-system'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-02T16:20:26.600Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/the-login-system/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-02T16:20:27.838Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 16:20:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[the-login-system]: beginning deploy... 
+[info] i  hosting[the-login-system]: found 18 files in build 
+[debug] [2020-10-02T16:20:27.901Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-10-02T16:20:27.901Z] [hosting][hash queue][FINAL] {"max":45,"min":6,"avg":10.333333333333334,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":51}
+[debug] [2020-10-02T16:20:27.901Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/the-login-system/versions/d30effd588a3c77c:populateFiles  
+ <request body omitted>
+[debug] [2020-10-02T16:20:28.889Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 16:20:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-02T16:20:28.892Z] [hosting][populate queue][FINAL] {"max":991,"min":991,"avg":991,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":993}
+[debug] [2020-10-02T16:20:28.892Z] [hosting] uploads queued: 6
