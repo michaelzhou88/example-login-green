@@ -52,7 +52,7 @@ body > #root > div {
     margin-top: 15px !important;
   }
   .container {
-    margin-bottom: 0;
+    margin-bottom: 20px !important;
     height: 350px;
     padding-bottom: 10px;
   }
@@ -106,7 +106,7 @@ body > #root > div {
     .ui-text {
       margin-top: 3px;
       text-indent: 5px;
-      font-size: 0.7em;
+      font-size: 0.75em;
     }
   }
   .ui-sign-in-button {
@@ -134,7 +134,7 @@ body > #root > div {
     padding: 75px !important;
     width: 500px;
     .logo {
-      height: 30px;
+      height: 35px;
       width: 120px;
     }
     .container {
@@ -148,6 +148,7 @@ body > #root > div {
         font-size: 1em;
       }
       .ui-sign-in-container {
+        margin-top: 5px;
         .ui-email-placeholder {
           font-size: 0.8em;
         }

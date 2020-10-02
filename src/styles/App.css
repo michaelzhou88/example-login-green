@@ -65,7 +65,7 @@ body > #root > div {
 }
 
 .ui-card .container {
-  margin-bottom: 0;
+  margin-bottom: 20px !important;
   height: 350px;
   padding-bottom: 10px;
 }
@@ -129,7 +129,7 @@ body > #root > div {
 .ui-card .ui-checkbox-container .ui-text {
   margin-top: 3px;
   text-indent: 5px;
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 
 .ui-card .ui-sign-in-button {
@@ -156,7 +156,7 @@ body > #root > div {
     width: 500px;
   }
   .ui-card .logo {
-    height: 30px;
+    height: 35px;
     width: 120px;
   }
   .ui-card .container {
@@ -176,6 +176,9 @@ body > #root > div {
   }
   .ui-card .container .ui-title-sub {
     font-size: 1em;
+  }
+  .ui-card .container .ui-sign-in-container {
+    margin-top: 5px;
   }
   .ui-card .container .ui-sign-in-container .ui-email-placeholder {
     font-size: 0.8em;
